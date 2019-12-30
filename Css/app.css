@@ -1,3 +1,33 @@
+@charset "UTF-8";
+/*
+* @Author: 青羽悠扬
+* @Date:   2019-12-30 10:10:08
+* @Email: 2582459187@qq.com
+* @Last Modified by:   青羽悠扬
+* @Last Modified time: 2019-12-30 17:02:26
+*/
+/*
+* 自定义变量
+*/
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */ }
 
+body {
+  padding-top: 70px; }
+
+footer {
+  padding: 30px 0; }
+
+.check-border {
+  border: 1px solid red; }
+
+.navbar {
+  border-top: 4px solid #99CCCC;
+  padding: 10px 100px; }
+
+#box {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=app.css.map */
