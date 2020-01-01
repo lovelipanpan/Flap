@@ -3,7 +3,7 @@
 * @Date:   2019-12-30 10:10:08
 * @Email: 2582459187@qq.com
 * @Last Modified by:   青羽悠扬
-* @Last Modified time: 2019-12-30 17:02:26
+* @Last Modified time: 2020-01-01 17:24:21
 */
 
 /*
@@ -18,10 +18,12 @@ $color-green: #CCFF99;
 $color-blue: #66CCFF;
 $color-light-blue: #CCFFFF;
 $color-sky-blue: #99CCFF;
+$color-background: #f0f2f5;
 
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+  background: $color-background;
 }
 body {
   padding-top: 70px;
@@ -35,8 +37,13 @@ footer {
 }
 
 .navbar{
-  border-top: 4px solid $color-indigo;
   padding: 10px 100px;
+  margin-top:4px;
+  box-shadow:0 1px 11px 2px #ccc;
+}
+
+.progress{
+  height: 4px;
 }
 
 #box{
