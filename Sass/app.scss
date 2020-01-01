@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 * @Author: 青羽悠扬
 * @Date:   2019-12-30 10:10:08
@@ -37,7 +38,7 @@ footer {
 }
 
 .navbar{
-  padding: 10px 100px;
+  padding: 10px 200px;
   margin-top:4px;
   box-shadow:0 1px 11px 2px #ccc;
 }
@@ -50,3 +51,19 @@ footer {
   margin-top: 20px;
 }
 
+.jumbotron{
+  height:300px;
+}
+
+.card-text{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;  //显示内容的行数；    要显示几行数字为几即可！
+  -webkit-box-orient: vertical;
+}
+
+.card>img{
+  height: 150px;
+  object-fit:cover;
+}
