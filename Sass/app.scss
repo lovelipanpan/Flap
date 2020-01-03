@@ -4,13 +4,12 @@
 * @Date:   2019-12-30 10:10:08
 * @Email: 2582459187@qq.com
 * @Last Modified by:   青羽悠扬
-* @Last Modified time: 2020-01-01 17:24:21
+* @Last Modified time: 2020-01-03 17:40:26
 */
 
 /*
 * 自定义变量
 */
-
 $color-white: #FFFFFF;
 $color-gray: #CCCCCC;
 $color-indigo: #99CCCC;
@@ -20,6 +19,18 @@ $color-blue: #66CCFF;
 $color-light-blue: #CCFFFF;
 $color-sky-blue: #99CCFF;
 $color-background: #f0f2f5;
+
+/*
+* 混合器
+*/
+//显示内容的行数；    要显示几行数字为几即可！
+@mixin text-overflow($line){
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;  
+  -webkit-box-orient: vertical;
+}
 
 html,
 body {
@@ -52,18 +63,38 @@ footer {
 }
 
 .jumbotron{
-  height:300px;
+  // height:300px;
+  background: $color-white;
+  padding: 0rem;
+
+  .jumbotron-image{
+    height: 16rem;
+    background: url(../Images/background.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .media{
+    margin-left: 20px;
+    margin-top: -50px;
+
+    img{
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .media-body{
+      @include text-overflow(2);
+    }
+  }
 }
 
 .card-text{
-  overflow: hidden;
-  text-overflow:ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;  //显示内容的行数；    要显示几行数字为几即可！
-  -webkit-box-orient: vertical;
+  @include text-overflow(4);
 }
 
 .card>img{
   height: 150px;
   object-fit:cover;
 }
+
