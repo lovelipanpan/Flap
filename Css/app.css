@@ -4,7 +4,7 @@
 * @Date:   2019-12-30 10:10:08
 * @Email: 2582459187@qq.com
 * @Last Modified by:   青羽悠扬
-* @Last Modified time: 2020-01-03 17:40:26
+* @Last Modified time: 2020-01-05 17:27:00
 */
 /*
 * 自定义变量
@@ -42,16 +42,20 @@ footer {
   background: #FFFFFF;
   padding: 0rem; }
   .jumbotron .jumbotron-image {
-    height: 16rem;
-    background: url(../Images/background.png) no-repeat;
+    height: 18rem;
+    background: url(../Images/background.jpg) no-repeat;
     background-size: cover;
-    background-position: center center; }
+    background-position: center center;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px); }
   .jumbotron .media {
     margin-left: 20px;
-    margin-top: -50px; }
+    margin-top: -72px; }
     .jumbotron .media img {
       width: 5rem;
-      height: 5rem; }
+      height: 5rem;
+      border-top-left-radius: calc(0.25rem - 1px);
+      border-top-right-radius: calc(0.25rem - 1px); }
     .jumbotron .media .media-body {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -69,5 +73,10 @@ footer {
 .card > img {
   height: 150px;
   object-fit: cover; }
+
+.right-card .card {
+  border-top: 2px solid #99CCFF;
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px); }
 
 /*# sourceMappingURL=app.css.map */
