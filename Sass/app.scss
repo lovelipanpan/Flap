@@ -3,9 +3,10 @@
 * @Author: 青羽悠扬
 * @Date:   2019-12-30 10:10:08
 * @Email: 2582459187@qq.com
-* @Last Modified by:   青羽悠扬
-* @Last Modified time: 2020-01-05 17:27:00
+* @Last Modified by:   Administrator
+* @Last Modified time: 2020-05-09 16:39:08
 */
+
 
 /*
 * 自定义变量
@@ -18,7 +19,7 @@ $color-green: #CCFF99;
 $color-blue: #66CCFF;
 $color-light-blue: #CCFFFF;
 $color-sky-blue: #99CCFF;
-$color-background: #f0f2f5;
+$color-background: #f5f5f5;
 
 /*
 * 混合器
@@ -44,7 +45,7 @@ body {
   background: $color-background;
 }
 body {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 footer {
   padding: 30px 0;
@@ -55,6 +56,7 @@ footer {
 }
 
 .navbar{
+  height: 50px;
   padding: 10px 200px;
   margin-top:4px;
   box-shadow:0 1px 11px 2px #ccc;
@@ -74,7 +76,7 @@ footer {
   padding: 0rem;
 
   .jumbotron-image{
-    height: 18rem;
+    height: 24rem;
     background: url(../Images/background.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
